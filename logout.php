@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    unset($_SESSION['kepribadian_nbc_c4.5_id']);
+    unset($_SESSION['kepribadian_nbc_c4.5_username']);
+    unset($_SESSION['kepribadian_nbc_c4.5_level']);
+    unset($_SESSION['kepribadian_nbc_c4.5_key']);
+    unset($_SESSION['kepribadian_nbc_c4.5_last_login']);
+    session_destroy();
+    header("location:login.php");
